@@ -24,5 +24,4 @@ public class MovieResource {
                 restTemplate.getForObject("https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" + apiKey, MovieSummary.class);
         return new Movie(movieId, movieSummary.getTitle(), movieSummary.getOverview());
     }
-//    https://api.themoviedb.org/3/movie/550?api_key=5d37e8aa6083fdb24d5d3a7fafaa8a2a
 }
